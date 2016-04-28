@@ -9,15 +9,6 @@ package funcionario;
  *
  * @author Gabriela
  */
-public class Funcionario {
-
-    String nome;
-    String cpf;
-    double salario;
-    
-    
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
+public class Gerente {
     
 }
