@@ -9,6 +9,19 @@ package funcionario;
  *
  * @author Gabriela
  */
-public class Gerente {
+public class Gerente extends Funcionario {
+    int senha;
+    int numerodeFuncionariosGerenciados;
+    
+    public boolean autentica(int senha){
+        if (this.senha == senha){
+            System.out.println("Acesso permitido");
+            return true;
+        }
+        else{
+            System.out.println("Acesso negado");
+            return false;
+        }
+    }
     
 }

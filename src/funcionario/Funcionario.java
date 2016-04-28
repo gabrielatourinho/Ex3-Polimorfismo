@@ -11,10 +11,37 @@ package funcionario;
  */
 public class Funcionario {
 
-    String nome;
-    String cpf;
-    double salario;
+    protected String nome;
+    protected String cpf;
+    protected double salario;
     
+    public void setNome(String a){
+        nome = a;
+    }
+    
+    public void setCPF(String n){
+        cpf = n;
+    }
+    
+    public void setSalario(double s){
+        salario = s;
+    }
+    
+    public String getNome(){
+        return nome;
+    }
+    
+    public String getCPF(){
+        return cpf;
+    }
+    
+    public double getSalario(){
+        return salario;
+    }
+    
+    public double getBonificacao(){
+        return salario*0.1;
+    }
     
     public static void main(String[] args) {
         // TODO code application logic here
