@@ -10,8 +10,20 @@ package funcionario;
  * @author Gabriela
  */
 public class Gerente extends Funcionario {
-    int senha;
-    int numerodeFuncionariosGerenciados;
+    protected int senha;
+    protected int numerodeFuncionariosGerenciados;
+    
+    public void setSenha(int s){
+        senha = s;
+    }
+    
+    public void setNumerodeFuncionariosGerenciados(int n){
+        numerodeFuncionariosGerenciados = n;
+    }
+    
+    public int getNumerodeFuncionariosGerenciados(){
+        return numerodeFuncionariosGerenciados;
+    }
     
     public boolean autentica(int senha){
         if (this.senha == senha){
@@ -22,6 +34,10 @@ public class Gerente extends Funcionario {
             System.out.println("Acesso negado");
             return false;
         }
+    }
+    
+    public double getBonificacao(){
+        return this.salario*0.15;
     }
     
 }
